@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="contactus.css">
+</head>
+
+<body>
+    <div class="new">
+        <form id="myForm">
+            <h2>CONTACT US</h2>
+
+            <label>First Name</label>
+            <input type="text" id="fname" required>
+            <br><br>
+
+            <label>Last Name</label>
+            <input type="text" id="lname" required>
+            <br><br>
+
+            <label>Email</label>
+            <input type="email" id="email" required>
+        
+            <br><br>
+
+            <label>Contact</label>
+            <input type="tel" id="contact" required>
+            <br><br>
+
+            <label>Gender</label>
+
+            <input type="radio" name="gender" value="Male">
+            <label>Male</label>
+
+            <input type="radio" name="gender" value="Female">
+            <label>Female</label>
+
+            <br><br>
+
+            <label>Subject</label>
+            <textarea id="subject"></textarea>
+
+            <br><br>
+
+            <label>Message</label>
+            <textarea id="message"></textarea>
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <hr>
+
+        <h2>Stored Data</h2>
+<div class="table-container">
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Gender</th>
+                    <th>Subject</th>
+                    <th>Message</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="tableBody"></tbody>
+
+        </table>
+        </div>
+    </div>
+
+    
+    <script src="contactus.js"></script>
+</body>
+
+</html>
